@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // To access the public/front-end content!
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // TO USE HANDLEBARSSSSSSSSS
 const hbs = exphbs.create({});
